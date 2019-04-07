@@ -40,6 +40,8 @@ class FirstViewController: UIViewController {
             }))
             vc.addAction(UIAlertAction(title: "Learn More...", style: .default, handler: { (alert) in
                 print("allows")
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "info")
+                self.present(vc!, animated: true, completion: nil)
             }))
             present(vc, animated: true, completion: nil)
         }

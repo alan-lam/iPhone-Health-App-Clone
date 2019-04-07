@@ -21,7 +21,7 @@ class InfoViewController: UIViewController {
         super.viewDidLoad()
 
         // Load content into web view
-        let url = Bundle.main.url(forResource: "info.html", withExtension: "html")
+        let url = Bundle.main.url(forResource: "info", withExtension: "html")
         myWebKit.loadFileURL(url!, allowingReadAccessTo: url!)
         
     }
